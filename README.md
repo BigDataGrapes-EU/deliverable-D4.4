@@ -42,7 +42,7 @@ git submodule update --remote
 mvn install package
 ```
 
-## Usage:
+## Usage
 The simulation must be programmed using the library classes to model the desired system. Examples are included in the [example folder](simulator-module/src/example/) of the simulator-module. There are currently two implemented examples: simple, and search. The `jar-with-dependencies` including these demos can be found, after the installation step, in the `target` folder of `simulation-module`. To run the demos, type in a terminal:
 
 `java -cp simulator-module-1.0-jar-with-dependencies.jar it.cnr.isti.hpclab.example.simple.Simulation`
@@ -51,7 +51,7 @@ or
 
 `java -cp simulator-module-1.0-jar-with-dependencies.jar it.cnr.isti.hpclab.example.search.Simulation`
 
-### Simple example:
+### Simple example
 In this example, we run a simple OLDI simulation, simulating a (possibly replicated) datastore with just two shards. In this simple example, we assume that requests arrive to the system following a Poisson distribution. Also, we assume that the service times for such requests follow an exponential distribution.
 
 When starting the simulation, the user can decide:
@@ -113,7 +113,7 @@ named arguments:
 
 The PERF configuration imposes to every shard server to operate its CPU at maximum core frequency. Differenlty, the PEGASUS [1] and PESOS [2] configurations apply power management techniques, varying the core frequencies at runtime. Both PEGASUS and PESOS do their best to keep latencies below the SLO parameter. SLO is ignored by PERF. More details can be found in [4].
 
-### Output format:
+### Output format
 The output file (gzipped) has two kinds of entries:
 * *broker*, and
 * *energy*.
@@ -130,7 +130,7 @@ Also, for each (simulated) second we will have an energy line in the output, lik
 ```
 This tells us that the system has consumed 47.728 Joules at second 86395 of the simulation.
 
-## How to munge the output file:
+## How to munge the output file
 To get the energy consumption (1 entry per second, value in Joules):
 `zcat output.gz | grep energy | cut -f3 -d' ' > output.energy`
 
@@ -142,7 +142,7 @@ Once these two files are generated, information can be plotted using plot_energy
 
 The python scripts can be found in [this](scripts) folder
 
-## Dependencies:
+## Dependencies
 * jades (https://github.com/catenamatteo/jades)
 * commons-math3
 * fastutil
