@@ -1,0 +1,1 @@
+Please note that msn.day2.qid.txt it is a small, example file. A larger input file has been used for CIKM'18 experiments, which could not be uploaded here due to the file size limit restrictions of GitHub.
