@@ -1,0 +1,4 @@
+[submodule "jades"]
+	path = jades
+	url = https://github.com/catenamatteo/jades.git
+	branch = master
