@@ -1,5 +1,11 @@
 # H2020 RIA BigDataGrapes - Resource Optimization Methods and Algorithms (T4.4)
 
+This document for deliverable D4.4 Resource Optimization Methods and Algorithms describes new tools to manage distributed big data platforms that will be used in the BigDataGrapes (BDG) platform to optimize the resource management of computing elements in large scale distributed infrastructures.
+
+The BigDataGrapes platform aims at providing Predictive Data Analytics tools that go beyond the state-of-the-art for what regards their application to large and complex grapevine-related data assets. Such tools leverage machine learning techniques that largely benefit from the distributed execution paradigm that serves as the basis for addressing efficiently the analytics and scalability challenges of grapevines-powered industries (see Deliverable 4.1). However, distributed architectures can consume a large amount of electricity when operated at large scale. This is the case of OnLine Data Intensive (OLDI) systems, which perform significant computing over massive datasets per user request. They often require responsiveness in the sub-second time scale at high request rates.
+
+In this document we illustrate the main operational characteristics of the OLDI systems and we describe our OLDI Simulator, a java library to simulate OnLine Data-Intensive systems to study their performance in terms of latency and energy consumption. Finally, we show how to use the library by using an example, in which we 1) we describe a system to simulate, 2) we model the system, and 3) we evaluate and compare various solutions by simulation means.
+
 # OLDI Simulator
 A library for simulating [O]n[l]ine [D]ata [I]ntensive systems, such as search engines, memory caching systems, and so on. The library simulates both latencies and CPU energy consumption of such systems.
 
