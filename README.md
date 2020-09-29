@@ -151,6 +151,11 @@ The python scripts can be found in [this](scripts) folder
 
 To use the python scripts, python3 is required along with numpy and matplotlib.
 
+
+# Efficient Network Management in Distributed Learning
+
+The source code of the technique presented in Chapter 5 of the second revision of D4.4 (due M33) is currently under review. It is available upon request. Please, write us an email: {r.perego@isti.cnr.it, f.nardini@isti.cnr.it}.
+
 ## References
 1. Lo et al. 2014. Towards energy proportionality for large-scale latency-critical workloads. ISCA'14.
 2. Catena and Tonellotto. 2017. Energy-Efficient Query Processing in Web Search Engines. TKDE.
